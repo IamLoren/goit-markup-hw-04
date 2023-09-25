@@ -308,22 +308,22 @@ img {
 }
 
 .team-icons {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .team-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--clr-blue-primary);
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-blue-primary);
+  border-radius: 50%;
 }
 
 .team-svg {
-    fill: var(--clr-white);
+  fill: var(--clr-white);
 }
 
 .team-svg
@@ -339,6 +339,7 @@ img {
 }
 
 .customers-logo {
+  width: 168px;
   padding: 16px 32px;
   border: 1px solid var(--clr-customer-icon);
 }
@@ -474,7 +475,7 @@ footer {
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
