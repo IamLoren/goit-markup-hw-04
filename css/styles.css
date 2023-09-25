@@ -358,19 +358,35 @@ img {
 
 /* CUSTOMERS */
 
+.customers {
+    padding: 120px 0;
+}
+
 .customers-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 24px; 
   width: 100%;
   margin-bottom: 120px;
 }
 
-.customers-logo {
-  width: 168px;
-  padding: 16px 32px;
-  border: 1px solid var(--clr-customer-icon);
+.customer-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--clr-customer-icon);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-customer-icon);
 }
+
+.customer-link:hover,
+.customer-link:focus {
+    border-color: var(--clr-blue-pressed);
+  color: var(--clr-blue-pressed);
+} 
 
 .customer-svg {
   fill: var(--clr-customer-icon);
