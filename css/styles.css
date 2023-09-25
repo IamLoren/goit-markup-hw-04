@@ -348,18 +348,25 @@ img {
   align-items: center;
   background-color: var(--clr-blue-primary);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: var(--clr-blue-pressed);
 }
 
 .team-svg {
-  fill: var(--clr-white);
+  fill: var(--clr-gray);
 }
 
 .team-svg
 
 /* CUSTOMERS */
 
-.customers {
-    padding: 120px 0;
+.customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .customers-logos {
@@ -371,6 +378,11 @@ img {
   margin-bottom: 120px;
 }
 
+.customers-logo {
+    width: calc((100% - 120px) / 6); 
+    height: 88px;
+}
+
 .customer-link {
     width: 100%;
     height: 100%;
@@ -380,6 +392,7 @@ img {
     justify-content: center;
     align-items: center;
     color: var(--clr-customer-icon);
+    transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .customer-link:hover,
@@ -389,7 +402,7 @@ img {
 } 
 
 .customer-svg {
-  fill: var(--clr-customer-icon);
+  fill:  currentColor;
 }
 
 /* FOOTER */
@@ -397,6 +410,16 @@ img {
 footer {
   padding: 100px 0;
   background-color: var(--clr-dark-blue);
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.footer-wrapper {
+    margin-right: 120px;
 }
 
 .footerlogo {
@@ -414,6 +437,45 @@ footer {
 
 .footerlogo > .span {
   color: #f4f4fd;
+}
+
+.socials-describe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--clr-white);
+    margin-bottom: 16px; 
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    background-color:  var(--clr-blue-primary);
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #31d0aa; 
+}
+
+.footer-svg {
+    fill: var(--clr-gray);
 }
 
 /* PORTFOLIO */
