@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
 }
 
 :root {
@@ -32,6 +33,10 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 li {
@@ -139,17 +144,13 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:first-child {
+.color-active {
   color: var(--clr-blue-pressed);
 }
 
-.nav-link:first-child
-
-.address {
-  font-style: normal;
-}
-
 .address-link {
+  height: 100%;
+  padding: 24px 0;
   color: inherit;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -377,7 +378,6 @@ img {
   justify-content: space-between;
   gap: 24px; 
   width: 100%;
-  margin-bottom: 120px;
 }
 
 .customers-logo {
